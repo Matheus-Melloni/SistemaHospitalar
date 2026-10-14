@@ -62,23 +62,31 @@
             this.especialidadeMedico = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnApagar = new System.Windows.Forms.Button();
-            this.areAP = new System.Windows.Forms.TextBox();
-            this.nomeAp = new System.Windows.Forms.TextBox();
-            this.area = new System.Windows.Forms.Label();
+            this.btnApagarMedico = new System.Windows.Forms.Button();
+            this.crmApagarMedico = new System.Windows.Forms.TextBox();
+            this.nomeApagarMedico = new System.Windows.Forms.TextBox();
+            this.CPF = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.Apagar = new System.Windows.Forms.Label();
-            this.codigoEX = new System.Windows.Forms.Label();
-            this.codigoAP = new System.Windows.Forms.TextBox();
             this.btnAtualizarMedico = new System.Windows.Forms.Button();
             this.btnAtualizarEnfermeiro = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtApagaCip = new System.Windows.Forms.TextBox();
+            this.txtApagarNomeEnfermeiro = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnApagarEnfermeiro = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.bntAtulizarDadosMedico = new System.Windows.Forms.Button();
+            this.bntAtulizarDadosEnfermeiro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -341,7 +349,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.Location = new System.Drawing.Point(246, 490);
+            this.dataGridView1.Location = new System.Drawing.Point(246, 473);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(712, 272);
             this.dataGridView1.TabIndex = 32;
@@ -421,93 +429,74 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(968, 490);
+            this.pictureBox4.Location = new System.Drawing.Point(246, 762);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(674, 253);
+            this.pictureBox4.Size = new System.Drawing.Size(712, 217);
             this.pictureBox4.TabIndex = 40;
             this.pictureBox4.TabStop = false;
             // 
-            // btnApagar
+            // btnApagarMedico
             // 
-            this.btnApagar.Location = new System.Drawing.Point(1481, 679);
-            this.btnApagar.Name = "btnApagar";
-            this.btnApagar.Size = new System.Drawing.Size(139, 35);
-            this.btnApagar.TabIndex = 41;
-            this.btnApagar.Text = "APAGAR";
-            this.btnApagar.UseVisualStyleBackColor = true;
-            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            this.btnApagarMedico.Location = new System.Drawing.Point(798, 913);
+            this.btnApagarMedico.Name = "btnApagarMedico";
+            this.btnApagarMedico.Size = new System.Drawing.Size(139, 35);
+            this.btnApagarMedico.TabIndex = 41;
+            this.btnApagarMedico.Text = "APAGAR";
+            this.btnApagarMedico.UseVisualStyleBackColor = true;
+            this.btnApagarMedico.Click += new System.EventHandler(this.btnApagar_Click);
             // 
-            // areAP
+            // crmApagarMedico
             // 
-            this.areAP.Location = new System.Drawing.Point(1109, 587);
-            this.areAP.Multiline = true;
-            this.areAP.Name = "areAP";
-            this.areAP.Size = new System.Drawing.Size(511, 25);
-            this.areAP.TabIndex = 49;
-            this.areAP.TextChanged += new System.EventHandler(this.areAP_TextChanged);
+            this.crmApagarMedico.Location = new System.Drawing.Point(387, 859);
+            this.crmApagarMedico.Multiline = true;
+            this.crmApagarMedico.Name = "crmApagarMedico";
+            this.crmApagarMedico.Size = new System.Drawing.Size(550, 25);
+            this.crmApagarMedico.TabIndex = 49;
+            this.crmApagarMedico.TextChanged += new System.EventHandler(this.areAP_TextChanged);
             // 
-            // nomeAp
+            // nomeApagarMedico
             // 
-            this.nomeAp.Location = new System.Drawing.Point(1109, 545);
-            this.nomeAp.Multiline = true;
-            this.nomeAp.Name = "nomeAp";
-            this.nomeAp.Size = new System.Drawing.Size(511, 25);
-            this.nomeAp.TabIndex = 48;
-            this.nomeAp.TextChanged += new System.EventHandler(this.nomeAp_TextChanged);
+            this.nomeApagarMedico.Location = new System.Drawing.Point(387, 817);
+            this.nomeApagarMedico.Multiline = true;
+            this.nomeApagarMedico.Name = "nomeApagarMedico";
+            this.nomeApagarMedico.Size = new System.Drawing.Size(550, 25);
+            this.nomeApagarMedico.TabIndex = 48;
+            this.nomeApagarMedico.TextChanged += new System.EventHandler(this.nomeAp_TextChanged);
             // 
-            // area
+            // CPF
             // 
-            this.area.AutoSize = true;
-            this.area.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.area.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.area.Location = new System.Drawing.Point(993, 587);
-            this.area.Name = "area";
-            this.area.Size = new System.Drawing.Size(54, 25);
-            this.area.TabIndex = 47;
-            this.area.Text = "Área";
-            this.area.Click += new System.EventHandler(this.area_Click);
+            this.CPF.AutoSize = true;
+            this.CPF.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CPF.Location = new System.Drawing.Point(257, 865);
+            this.CPF.Name = "CPF";
+            this.CPF.Size = new System.Drawing.Size(57, 25);
+            this.CPF.TabIndex = 47;
+            this.CPF.Text = "CRM";
+            this.CPF.Click += new System.EventHandler(this.area_Click);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(990, 545);
+            this.label20.Location = new System.Drawing.Point(254, 823);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(64, 25);
             this.label20.TabIndex = 42;
             this.label20.Text = "Nome";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // Apagar
             // 
             this.Apagar.AutoSize = true;
             this.Apagar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Apagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apagar.Location = new System.Drawing.Point(1263, 510);
+            this.Apagar.Location = new System.Drawing.Point(541, 782);
             this.Apagar.Name = "Apagar";
-            this.Apagar.Size = new System.Drawing.Size(95, 25);
+            this.Apagar.Size = new System.Drawing.Size(180, 25);
             this.Apagar.TabIndex = 54;
-            this.Apagar.Text = "APAGAR";
-            // 
-            // codigoEX
-            // 
-            this.codigoEX.AutoSize = true;
-            this.codigoEX.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.codigoEX.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codigoEX.Location = new System.Drawing.Point(993, 626);
-            this.codigoEX.Name = "codigoEX";
-            this.codigoEX.Size = new System.Drawing.Size(70, 25);
-            this.codigoEX.TabIndex = 62;
-            this.codigoEX.Text = "codigo";
-            // 
-            // codigoAP
-            // 
-            this.codigoAP.Location = new System.Drawing.Point(1109, 632);
-            this.codigoAP.Multiline = true;
-            this.codigoAP.Name = "codigoAP";
-            this.codigoAP.Size = new System.Drawing.Size(511, 25);
-            this.codigoAP.TabIndex = 63;
-            this.codigoAP.TextChanged += new System.EventHandler(this.codigoAP_TextChanged);
+            this.Apagar.Text = "APAGAR MEDICO";
             // 
             // btnAtualizarMedico
             // 
@@ -515,7 +504,7 @@
             this.btnAtualizarMedico.Name = "btnAtualizarMedico";
             this.btnAtualizarMedico.Size = new System.Drawing.Size(139, 35);
             this.btnAtualizarMedico.TabIndex = 74;
-            this.btnAtualizarMedico.Text = "Atualizar";
+            this.btnAtualizarMedico.Text = "refresh";
             this.btnAtualizarMedico.UseVisualStyleBackColor = true;
             this.btnAtualizarMedico.Click += new System.EventHandler(this.btnAtualizarMedico_Click);
             // 
@@ -525,35 +514,132 @@
             this.btnAtualizarEnfermeiro.Name = "btnAtualizarEnfermeiro";
             this.btnAtualizarEnfermeiro.Size = new System.Drawing.Size(139, 35);
             this.btnAtualizarEnfermeiro.TabIndex = 75;
-            this.btnAtualizarEnfermeiro.Text = "Atualizar";
+            this.btnAtualizarEnfermeiro.Text = "refresh";
             this.btnAtualizarEnfermeiro.UseVisualStyleBackColor = true;
+            this.btnAtualizarEnfermeiro.Click += new System.EventHandler(this.btnAtualizarEnfermeiro_Click_1);
             // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.Location = new System.Drawing.Point(246, 768);
+            this.dataGridView2.Location = new System.Drawing.Point(964, 473);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(712, 268);
+            this.dataGridView2.Size = new System.Drawing.Size(678, 272);
             this.dataGridView2.TabIndex = 76;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1262, 782);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(229, 25);
+            this.label15.TabIndex = 83;
+            this.label15.Text = "APAGAR ENFERMEIRO";
+            // 
+            // txtApagaCip
+            // 
+            this.txtApagaCip.Location = new System.Drawing.Point(1108, 859);
+            this.txtApagaCip.Multiline = true;
+            this.txtApagaCip.Name = "txtApagaCip";
+            this.txtApagaCip.Size = new System.Drawing.Size(516, 25);
+            this.txtApagaCip.TabIndex = 82;
+            // 
+            // txtApagarNomeEnfermeiro
+            // 
+            this.txtApagarNomeEnfermeiro.Location = new System.Drawing.Point(1108, 817);
+            this.txtApagarNomeEnfermeiro.Multiline = true;
+            this.txtApagarNomeEnfermeiro.Name = "txtApagarNomeEnfermeiro";
+            this.txtApagarNomeEnfermeiro.Size = new System.Drawing.Size(516, 25);
+            this.txtApagarNomeEnfermeiro.TabIndex = 81;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(978, 865);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 25);
+            this.label16.TabIndex = 80;
+            this.label16.Text = "CIP";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(975, 823);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 25);
+            this.label17.TabIndex = 79;
+            this.label17.Text = "Nome";
+            // 
+            // btnApagarEnfermeiro
+            // 
+            this.btnApagarEnfermeiro.Location = new System.Drawing.Point(1519, 913);
+            this.btnApagarEnfermeiro.Name = "btnApagarEnfermeiro";
+            this.btnApagarEnfermeiro.Size = new System.Drawing.Size(105, 35);
+            this.btnApagarEnfermeiro.TabIndex = 78;
+            this.btnApagarEnfermeiro.Text = "APAGAR";
+            this.btnApagarEnfermeiro.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Location = new System.Drawing.Point(967, 762);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(678, 217);
+            this.pictureBox5.TabIndex = 77;
+            this.pictureBox5.TabStop = false;
+            // 
+            // bntAtulizarDadosMedico
+            // 
+            this.bntAtulizarDadosMedico.Location = new System.Drawing.Point(508, 403);
+            this.bntAtulizarDadosMedico.Name = "bntAtulizarDadosMedico";
+            this.bntAtulizarDadosMedico.Size = new System.Drawing.Size(139, 35);
+            this.bntAtulizarDadosMedico.TabIndex = 84;
+            this.bntAtulizarDadosMedico.Text = "Atualizar";
+            this.bntAtulizarDadosMedico.UseVisualStyleBackColor = true;
+            this.bntAtulizarDadosMedico.Click += new System.EventHandler(this.bntAtulizarDadosMedico_Click);
+            // 
+            // bntAtulizarDadosEnfermeiro
+            // 
+            this.bntAtulizarDadosEnfermeiro.Location = new System.Drawing.Point(1191, 403);
+            this.bntAtulizarDadosEnfermeiro.Name = "bntAtulizarDadosEnfermeiro";
+            this.bntAtulizarDadosEnfermeiro.Size = new System.Drawing.Size(139, 35);
+            this.bntAtulizarDadosEnfermeiro.TabIndex = 85;
+            this.bntAtulizarDadosEnfermeiro.Text = "Atualizar";
+            this.bntAtulizarDadosEnfermeiro.UseVisualStyleBackColor = true;
+            this.bntAtulizarDadosEnfermeiro.Click += new System.EventHandler(this.bntAtulizarDadosEnfermeiro_Click);
             // 
             // cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1658, 1045);
+            this.ClientSize = new System.Drawing.Size(1657, 1045);
+            this.Controls.Add(this.bntAtulizarDadosEnfermeiro);
+            this.Controls.Add(this.bntAtulizarDadosMedico);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtApagaCip);
+            this.Controls.Add(this.txtApagarNomeEnfermeiro);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.btnApagarEnfermeiro);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnAtualizarEnfermeiro);
             this.Controls.Add(this.btnAtualizarMedico);
-            this.Controls.Add(this.codigoAP);
-            this.Controls.Add(this.codigoEX);
             this.Controls.Add(this.Apagar);
-            this.Controls.Add(this.areAP);
-            this.Controls.Add(this.nomeAp);
-            this.Controls.Add(this.area);
+            this.Controls.Add(this.crmApagarMedico);
+            this.Controls.Add(this.nomeApagarMedico);
+            this.Controls.Add(this.CPF);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.btnApagar);
+            this.Controls.Add(this.btnApagarMedico);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.especialidadeMedico);
@@ -596,6 +682,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -636,16 +723,23 @@
         private System.Windows.Forms.TextBox especialidadeMedico;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnApagar;
-        private System.Windows.Forms.TextBox areAP;
-        private System.Windows.Forms.TextBox nomeAp;
-        private System.Windows.Forms.Label area;
+        private System.Windows.Forms.Button btnApagarMedico;
+        private System.Windows.Forms.TextBox crmApagarMedico;
+        private System.Windows.Forms.TextBox nomeApagarMedico;
+        private System.Windows.Forms.Label CPF;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label Apagar;
-        private System.Windows.Forms.Label codigoEX;
-        private System.Windows.Forms.TextBox codigoAP;
         private System.Windows.Forms.Button btnAtualizarMedico;
         private System.Windows.Forms.Button btnAtualizarEnfermeiro;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtApagaCip;
+        private System.Windows.Forms.TextBox txtApagarNomeEnfermeiro;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btnApagarEnfermeiro;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button bntAtulizarDadosMedico;
+        private System.Windows.Forms.Button bntAtulizarDadosEnfermeiro;
     }
 }
